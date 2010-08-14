@@ -2,15 +2,15 @@
 
 cd /home/plone/Plone/zeocluster
 
-if [ -f "universal-buildout.cfg" ]
+if [ -f "unified-buildout.cfg" ]
 then
   echo "skipping install of buildout layers"
 else
   echo "adding buildout layers"
-  mv buildout.cfg universal-buildout.cfg
+  mv buildout.cfg unified-buildout.cfg
   cp /root/Plone4StackScript/*.cfg .
   chown plone:plone *.cfg
-  echo 'rerunning buildout with the new layers'
+  echo 're-running buildout with the new layers'
   bin/buildout
 fi
 
