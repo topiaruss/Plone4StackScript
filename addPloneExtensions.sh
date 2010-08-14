@@ -8,7 +8,7 @@ then
 else
   echo "adding buildout layers"
   mv buildout.cfg unified-buildout.cfg
-  cp /root/Plone4StackScript/*.cfg .
+  cp new.buildout.cfg buildout.cfg
   chown plone:plone *.cfg
   echo 're-running buildout with the new layers'
   bin/buildout
