@@ -1,6 +1,7 @@
-#! /bin/bash
+#
+/bin/bash
 
-cd /home/plone/Plone/zeocluster
+cd /home/plone/Plone4/zeocluster
 
 if [ -f "unified-buildout.cfg" ]
 then
