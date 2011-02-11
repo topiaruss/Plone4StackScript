@@ -1,5 +1,4 @@
-#
-/bin/bash
+#!/bin/bash
 
 cd /home/plone/Plone4/zeocluster
 
